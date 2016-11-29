@@ -1,0 +1,118 @@
+html, body, ul, div, img, h1, a, li {
+	padding:0;
+	margin:0;
+}
+* {
+	transition: all 0.3s;
+}
+
+body {
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #3500FF;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+}
+form {
+  display: block;
+  background-color: white;
+  border: solid 1px #dcdcdc;
+  border-radius: 5px;
+}
+input {
+  display: inline-block;;
+  border: none;
+  margin: 0;
+  height: 34px;
+  padding: 10px;
+  vertical-align: middle;
+  width: calc(((100% - 220px) / 4));
+  border-right: solid 1px #bcbcbc;
+  background-color: rgba(0,0,0,0);
+  color: #fff;
+  font-size: 16px;
+}
+input[type="submit"] {
+  height: auto;
+  width: auto;
+  padding: 11px 25px;
+  border-radius: 5px;
+  background-color: #49CDFF;
+  color: white;
+  float: right;
+  margin: 7px;
+  text-align: center;
+}
+input[type="submit"]:hover {
+  background-color: #2bb3e7;
+}
+
+input[type="date"] {
+  padding-left: 10px;
+  border: none;
+  color: #636363;
+}
+input:focus {
+  background-color: #49CDFF;
+  outline-width: 0;
+  color: white;
+}
+input:focus::-webkit-input-placeholder {
+   color: #fff;
+}
+::-webkit-input-placeholder {
+   padding: 5px;
+   font-size: 16px;
+   color: #636363;
+}
+:-moz-placeholder { /* Firefox 18- */
+  padding: 5px;
+  font-size: 16px;
+  color: #636363;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  padding: 5px;
+  font-size: 16px;
+  color: #636363;
+}
+:-ms-input-placeholder {
+  padding: 5px;
+  font-size: 16px;
+  color: #636363;
+}
+
+
+h2 {
+  font-size: 55px;
+  font-weight: 300;
+  color: #49CDFF;
+}
+
+#body {
+    margin-top: 132px;
+    width: calc(90% - 80px);
+    max-width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#header {
+  display: block;
+  padding: 25px 35px;
+}
+
+#logowrapper {
+  display: inline-block;
+}
+
+#logout {
+  display: inline-block;
+  float: right;
+}
