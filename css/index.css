@@ -29,34 +29,37 @@ input {
   display: inline-block;;
   border: none;
   margin: 0;
-  height: 34px;
-  padding: 10px;
+  height: 40px;
+  padding: 5px 20px;
   vertical-align: middle;
-  width: calc(((100% - 220px) / 4));
+  width: calc(((100% - 80px - 111px - 195px - 97px - 18px - 3px) / 2));
   border-right: solid 1px #bcbcbc;
   background-color: rgba(0,0,0,0);
   color: #fff;
   font-size: 16px;
 }
+input[type="number"] {
+	width: 70px;
+}
 input[type="submit"] {
-  height: auto;
-  width: auto;
-  padding: 11px 25px;
+  height: 37px;
+  width: 97px;
   border-radius: 5px;
   background-color: #49CDFF;
   color: white;
   float: right;
-  margin: 7px;
+  margin: 7px 9px;
   text-align: center;
+	font-size: 14px;
 }
 input[type="submit"]:hover {
   background-color: #2bb3e7;
 }
 
 input[type="date"] {
-  padding-left: 10px;
   border: none;
   color: #636363;
+	width: 155px;
 }
 input:focus {
   background-color: #49CDFF;
