@@ -12,7 +12,7 @@ body {
 h2 {
   font-size: 55px;
   font-weight: 300;
-  color: #49CDFF;
+  color: #3500FF;
 }
 a {
   text-decoration: none;
@@ -56,14 +56,20 @@ input[type="submit"] {
 	height: 28px;
 	border-right: none;
   border-radius: 5px;
-  background-color: #49CDFF;
+  background-color: #6b44fb;
   color: white;
   float: right;
   margin: 6px 7px;
   text-align: center;
 	font-size: 14px;
 }
-
+input[placeholder="Notes"] {
+	flex: 3 1 auto;
+	min-width: 300px;
+}
+#postForm input[type="date"] {
+	border-right: solid 1px #dcdcdc;
+}
 input[type="submit"]:hover {
   background-color: #2bb3e7;
 }
@@ -103,5 +109,15 @@ input:focus {
 	}
 	input[type="submit"] {
 		flex: 1 1 97px;
+	}
+}
+@media screen and (max-width: 463px) {
+	#body {
+	  margin-top: 0px;
+	  width: calc(100% - 70px);
+	  max-width: 1200px;
+	  position: absolute;
+	  left: 50%;
+	  transform: translateX(-50%);
 	}
 }
