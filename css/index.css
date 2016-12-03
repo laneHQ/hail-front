@@ -8,10 +8,12 @@ html, body, ul, div, img, h1, a, li {
 
 body {
     font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 0px;
-    line-height: 0px;
 }
-
+h2 {
+  font-size: 55px;
+  font-weight: 300;
+  color: #49CDFF;
+}
 a {
   text-decoration: none;
   color: #3500FF;
@@ -20,90 +22,63 @@ a {
   display: inline-block;
 }
 form {
-  display: block;
+  display: flex;
+	flex-wrap: wrap;
   background-color: white;
   border: solid 1px #dcdcdc;
   border-radius: 5px;
 }
 input {
-  display: inline-block;;
+	flex: 1 1 152px;
   border: none;
-  margin: 0;
-  height: 40px;
+  margin: 0 -1px -1px 0;
+  height: 41px;
   padding: 5px 20px;
-  vertical-align: middle;
-  width: calc(((100% - 80px - 111px - 195px - 97px - 18px - 3px) / 2));
-  border-right: solid 1px #bcbcbc;
+  border-right: solid 1px #dcdcdc;
+	border-bottom: solid 1px #dcdcdc;
   background-color: rgba(0,0,0,0);
-  color: #fff;
   font-size: 16px;
+	line-height: 16px;
+	box-sizing: content-box;
 }
 input[type="number"] {
-	width: 70px;
+	flex: 0 1 auto;
+	width: 97px;
 }
+input[type="date"] {
+	flex: 0 1 auto;
+	width: 153px;
+	border-right: none;
+}
+
 input[type="submit"] {
-  height: 37px;
-  width: 97px;
+	flex: 0 1 97px;
+	height: 28px;
+	border-right: none;
   border-radius: 5px;
   background-color: #49CDFF;
   color: white;
   float: right;
-  margin: 7px 9px;
+  margin: 6px 7px;
   text-align: center;
 	font-size: 14px;
 }
+
 input[type="submit"]:hover {
   background-color: #2bb3e7;
 }
 
-input[type="date"] {
-  border: none;
-  color: #636363;
-	width: 155px;
-}
 input:focus {
-  background-color: #49CDFF;
   outline-width: 0;
-  color: white;
-}
-input:focus::-webkit-input-placeholder {
-   color: #fff;
-}
-::-webkit-input-placeholder {
-   padding: 5px;
-   font-size: 16px;
-   color: #636363;
-}
-:-moz-placeholder { /* Firefox 18- */
-  padding: 5px;
-  font-size: 16px;
-  color: #636363;
-}
-::-moz-placeholder {  /* Firefox 19+ */
-  padding: 5px;
-  font-size: 16px;
-  color: #636363;
-}
-:-ms-input-placeholder {
-  padding: 5px;
-  font-size: 16px;
-  color: #636363;
-}
-
-
-h2 {
-  font-size: 55px;
-  font-weight: 300;
-  color: #49CDFF;
 }
 
 #body {
-    margin-top: 132px;
-    width: calc(90% - 80px);
-    max-width: 1200px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  margin-top: 132px;
+  width: calc(90% - 80px);
+  max-width: 1200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #header {
@@ -118,4 +93,15 @@ h2 {
 #logout {
   display: inline-block;
   float: right;
+}
+
+@media screen and (max-width: 1088px) {
+	input[type="date"] {
+		border-right: solid 1px #dcdcdc;
+		flex: 1 1 auto;
+		width: 153px;
+	}
+	input[type="submit"] {
+		flex: 1 1 97px;
+	}
 }
