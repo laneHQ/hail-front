@@ -5,6 +5,8 @@
 		<link rel="stylesheet" href="css/index.css" type="text/css"/>
 
 		<!--JS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
 		<!--OTHER-->
 		<title>Hail</title>
@@ -14,33 +16,32 @@
 		<!--BODY-->
 		<div id="header">
 			<a href="index.html" id="logowrapper">
-		    	<img id='logo' src='images/logo.svg'>
+		    	<img id='logo' src='images/logo.png'>
 			</a>
 			<a href="index.html" id="logout">logout</a>
 		</div>
 		<div id='body'>
-				<div id="find">
-					<h2>Find A Ride</h2>
-					<form id="findForm">
-						<input type="text" placeholder="Origin">
-						<input type="text" placeholder="Destination">
-						<input type="number" placeholder="Spots">
-						<input type="date" placeholder="Date">
-						<input type="submit" placeholder="submit">
-					</form>
+				<h3 id="message"> Drive or ride with people just like you. <b>Hail<b> <h3>
+				<div id="labels">
+					<h2 class="selected ride">Ride</h2>
+					<h2 class="drive">Drive</h2>
 				</div>
-				<div id="post">
-					<h2>Post A Ride</h2>
-					<form id="postForm">
-						<input type="text" placeholder="Origin">
-						<input type="text" placeholder="Destination">
-						<input type="number" placeholder="Spots">
-						<input type="date" placeholder="Date">
-						<input type="number" placeholder="Price Per Seat">
-						<input type="text" placeholder="Notes">
-						<input type="submit" placeholder="submit">
-					</form>
-				</div>
+				<form id="findForm" class="current">
+					<input type="text" placeholder="Origin">
+					<input type="text" placeholder="Destination">
+					<input type="number" placeholder="Spots">
+					<input type="date" placeholder="Date">
+					<input type="submit" placeholder="submit">
+				</form>
+				<form id="postForm">
+					<input type="text" placeholder="Origin">
+					<input type="text" placeholder="Destination">
+					<input type="number" placeholder="Spots">
+					<input type="date" placeholder="Date">
+					<input type="number" placeholder="Price Per Seat">
+					<input type="text" placeholder="Notes">
+					<input type="submit" placeholder="submit">
+				</form>
 		</div>
 	</body>
 </html>
