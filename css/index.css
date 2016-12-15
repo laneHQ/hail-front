@@ -12,7 +12,7 @@ body {
     font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h2 {
-  font-size: 44px;
+  font-size: 46px;
   font-weight: 300;
   color: #6F49FF;
 	margin: 30px 0;
@@ -92,11 +92,15 @@ input[type="submit"]:hover {
 input:focus {
   outline-width: 0;
 }
+
+input:focus::-webkit-input-placeholder {
+  color: #6F49FF;
+}
 .current {
 	display: flex;
 }
 #body {
-  margin-top: 132px;
+  margin-top: 115px;
   width: calc(90% - 80px);
   max-width: 1200px;
   position: absolute;
