@@ -1,0 +1,60 @@
+html, body, ul, div, img, h1, a, li {
+	padding:0;
+	margin:0;
+}
+* {
+	transition: all 0.3s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+a {
+  text-decoration: none;
+  color: #6F49FF;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 0;
+}
+#header {
+  display: block;
+  padding: 56px 45px;
+  background-color: #6F49FF;
+  color: white;
+  text-align: center;
+}
+.picWrapper {
+  display: inline-block;
+}
+#location {
+  display: inline-block;
+}
+#back {
+  float: left;
+}
+#back > img{
+	height: 27px;
+}
+#filter {
+  float: right;
+}
+#filter > img{
+  height: 24px;
+}
+#header-dots {
+  height: 23px;
+  margin: 0 60px;
+}
+.location-label {
+  transform: translateY(-5px);
+}
