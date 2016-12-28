@@ -33,7 +33,7 @@ h4 {
 }
 #header {
   display: block;
-  padding: 56px 45px;
+  padding: 54px 45px;
   background-color: #6F49FF;
   color: white;
   text-align: center;
@@ -43,6 +43,7 @@ h4 {
 }
 #location {
   display: inline-block;
+  transform: translateY(1px);
 }
 #back {
   float: left;
@@ -66,15 +67,16 @@ h4 {
 /* CARD STUFF */
 .card-expanded {
   width: 900px;
+  height: 450px;
   background-color: white;
-  display: inline-block;
+  display: block;;
   box-shadow: 0px 28px 35px 0px rgba(0,0,0,0.09);
   border-radius: 8px;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 #map {
   width: 450px;
-  height: 451px;
+  height: 450px;
   float: right;
   background-image: url("../Images/map.png");
   background-size: contain;
@@ -111,6 +113,7 @@ h4 {
   width: 44px;
   height: 44px;
   background-color: #6f49ff;
+  background: linear-gradient(194deg, #ac85ff, #6F49FF);
   border-radius: 22px;
   left: 0;
 }
@@ -130,9 +133,10 @@ h4 {
 }
 .price {
   right: 0;
+  top: 1px;
   color: #42cb6f;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 34px;
 }
 .description {
   top: 65px;
@@ -143,6 +147,9 @@ h4 {
 #message {
   bottom: 3px;
 }
+#message:hover #Search-Results-Message {
+  fill: #8862ff;
+}
 #request-button {
   bottom: 0;
   right: 0;
@@ -150,6 +157,9 @@ h4 {
   color: white;
   padding: 10px 112px 12px 112px;
   border-radius: 5px;
+}
+#request-button:hover {
+  background-color: #8862ff;
 }
 .left {
   text-align: right;
@@ -172,11 +182,43 @@ h4 {
   font-weight: 400;
   letter-spacing: 3.25px;
   color: #757575;
-
 }
 .date {
   transform: translateX(3px);
 }
 .departure.date,.departure.city {
   margin-bottom: 56px;
+}
+/* CARD SMALL */
+.card-mini {
+  width: 452px;
+  height: 69px;
+  padding: 24px 30px;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 24px auto;
+}
+.card-mini > .info {
+  height: 69px;
+  width: 100%;
+  margin: 0;
+}
+.card-mini > .info > .profile-pic {
+  height: 69px;
+  width: 69px;
+  border-radius: 40px;
+}
+.card-mini > .info > .name {
+  left: 96px;
+  top: 12px;
+}
+.card-mini > .info > .spots {
+  left: 96px;
+  top: 37px;
+}
+.card-mini > .info > .price {
+  font-size: 38px;
+  top: 8px;
 }
