@@ -33,7 +33,7 @@ h4 {
 }
 #header {
   display: block;
-  padding: 56px 45px;
+  padding: 54px 45px;
   background-color: #6F49FF;
   color: white;
   text-align: center;
@@ -43,6 +43,7 @@ h4 {
 }
 #location {
   display: inline-block;
+  transform: translateY(1px);
 }
 #back {
   float: left;
@@ -111,6 +112,7 @@ h4 {
   width: 44px;
   height: 44px;
   background-color: #6f49ff;
+  background: linear-gradient(194deg, #ac85ff, #6F49FF);
   border-radius: 22px;
   left: 0;
 }
@@ -130,9 +132,10 @@ h4 {
 }
 .price {
   right: 0;
+  top: 1px;
   color: #42cb6f;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 34px;
 }
 .description {
   top: 65px;
@@ -143,6 +146,9 @@ h4 {
 #message {
   bottom: 3px;
 }
+#message:hover #Search-Results-Message {
+  fill: #6f49ff;
+}
 #request-button {
   bottom: 0;
   right: 0;
@@ -150,6 +156,9 @@ h4 {
   color: white;
   padding: 10px 112px 12px 112px;
   border-radius: 5px;
+}
+#request-button:hover {
+  background-color: #5c3dd2;
 }
 .left {
   text-align: right;
