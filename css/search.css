@@ -72,6 +72,13 @@ h4 {
   border-radius: 8px;
   margin: 40px 0;
 }
+#map {
+  width: 450px;
+  height: 451px;
+  float: right;
+  background-image: url("../Images/map.png");
+  background-size: contain;
+}
 .info {
   width: 376px;
   height: 387px;
@@ -89,7 +96,7 @@ h4 {
 }
 .trip-info {
   width: 100%;
-  top: 152px;
+  top: 157px;
   position: absolute;
   height: 138px;
   left: 50%;
@@ -109,23 +116,40 @@ h4 {
 }
 .name {
   left: 60px;
+  top: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
 }
 .spots {
-  top: 24px;
+  top: 25px;
   left: 60px;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
 }
 .price {
   right: 0;
+  color: #42cb6f;
+  font-weight: 300;
+  font-size: 30px;
 }
 .description {
   top: 65px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #757575;
 }
 #message {
-  bottom: 0;
+  bottom: 3px;
 }
 #request-button {
   bottom: 0;
   right: 0;
+  background-color: #6f49ff;
+  color: white;
+  padding: 10px 112px 12px 112px;
+  border-radius: 5px;
 }
 .left {
   text-align: right;
@@ -140,14 +164,14 @@ h4 {
 .time,.adress{
   font-size: 20px;
   font-weight: 500;
-  color: #626262;
+  color: #454545;
   margin: -3px 0 2px 0;
 }
 .date,.city {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 3.25px;
-  color: #848484;
+  color: #757575;
 
 }
 .date {
