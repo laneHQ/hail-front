@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--CSS-->
+		<link rel="stylesheet" href="css/search.css" type="text/css"/>
+
+		<!--JS-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<!--OTHER-->
+		<title>Search Results</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+	<body>
+		<!--HEADER-->
+		<div id="header">
+			<a href="index.html" class="picWrapper" id='back'>
+		    	<img src='images/back-arrow.svg'>
+			</a>
+      <div id="location">
+        <h3 class="location-label">San Francisco, CA</h3>
+        <img id="header-dots" src='images/dots-header.svg'></img>
+        <h3 class="location-label">San Luis Obispo, CA</h3>
+      </div>
+      <a href="index.html" class="picWrapper" id='filter'>
+		    	<img src='images/filter.svg'>
+			</a>
+		</div>
+    <!--BODY-->
+		<div id='body'>
+      <div class="card-expanded">
+        <div class="info">
+          <a href="index.html" class="profile-pic"></a>
+          <h4 class="name">Elon Musk</h4>
+          <h5 class="spots">3 Spots Available</h5>
+          <h4 class="price">$20</h4>
+          <p class="description">Will be taking the 101S down to SLO! Plenty of trunk space available!</p>
+          <div class="trip-info">
+            <div class="left">
+              <h4 class="departure time">9:30AM</h4>
+              <h4 class="departure date">May 10</h4>
+              <h4 class="arrival time">9:30AM</h4>
+              <h4 class="arrival date">May 10</h4>
+            </div>
+            <img src="images/dots-body.svg">
+            <div class="right">
+              <h4 class="departure adress">Hayes Valley</h4>
+              <h4 class="departure city">San Francisco</h4>
+              <h4 class="arrival adress">Hayes Valley</h4>
+              <h4 class="arrival city">San Francisco</h4>
+            </div>
+          </div>
+          <a href="index.html" class="picWrapper" id='message'>
+    		    	<img src='images/message.svg'>
+    			</a>
+          <a id="request-button" href="index.html">Request</a>
+        </div>
+        <div id="map"></div>
+      </div>
+		</div>
+	</body>
+</html>
